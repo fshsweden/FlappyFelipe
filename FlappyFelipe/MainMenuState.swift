@@ -18,6 +18,7 @@ class MainMenuState: GKState {
     }
     
     override func didEnter(from previousState: GKState?) {
+			
         scene.setupBackground()
         scene.setupForeground()
         scene.setupPlayer()

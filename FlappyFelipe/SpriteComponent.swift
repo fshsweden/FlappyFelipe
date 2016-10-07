@@ -10,28 +10,24 @@ import SpriteKit
 import GameplayKit
 
 class SpriteComponent: GKComponent {
-    // HUH??
-    // var node = SKSpriteNode()
     var node : SKSpriteNode!
-    
-    // huh???
-    override init() {
-       super.init()
-    }
     
     init(entity: GKEntity, texture: SKTexture, size: CGSize) {
         node = SKSpriteNode(texture: texture, color: SKColor.white, size: size)
-        node.entity = entity
+        node.entity = entity // back pointer
         super.init()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
+	
+		// Is this OK?
     func getNode() -> SKSpriteNode {
         return node
     }
+		func getEntity() -> GKEntity {
+			return node.entity!
+		}
 }
 

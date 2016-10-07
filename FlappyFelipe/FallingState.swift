@@ -21,6 +21,8 @@ class FallingState: GKState {
     }
     
     override func didEnter(from previousState: GKState?) {
+			
+				// When entering this state, just play funny sound!
         scene.run(SKAction.sequence([whackAction, SKAction.wait(forDuration: 0.1), fallingAction]))
         scene.stopSpawning()
     }

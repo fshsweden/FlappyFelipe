@@ -9,8 +9,14 @@
 import SpriteKit
 import GameplayKit
 
+/*
+	------------------------------------------------------------------------
+
+	------------------------------------------------------------------------
+*/
 class Obstacle : GKEntity {
-    var spriteComponent: SpriteComponent!  /* Explicitly unwrapped optional! */
+	
+    var spriteComponent: SpriteComponent!
     
     init(imageName: String) {
         super.init()
@@ -25,11 +31,8 @@ class Obstacle : GKEntity {
         spriteNode.physicsBody?.categoryBitMask = PhysicsCategory.Obstacle
         spriteNode.physicsBody?.collisionBitMask = 0
         spriteNode.physicsBody?.contactTestBitMask = PhysicsCategory.Player
-        
-        
     }
-    
-    
+	
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

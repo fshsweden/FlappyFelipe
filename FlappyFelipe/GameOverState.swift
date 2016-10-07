@@ -22,9 +22,9 @@ class GameOverState: GKState {
     
     override func didEnter(from previousState: GKState?) {
         scene.run(hitGroundAction)
-        scene.stopSpawning()
+        scene.stopSpawning() // Stop spawning Obstacles
         
-        // scene.player.move
+        scene.player.movementAllowed = false  // HACK
         
         showScoreCard()
     }
@@ -36,7 +36,9 @@ class GameOverState: GKState {
     override func update(deltaTime seconds: TimeInterval) {
         
     }
-    
+	
+	
+	
     func setBestScore(bestScore: Int) {
         UserDefaults.standard.set(bestScore, forKey:"BestScore")
         UserDefaults.standard.synchronize()
