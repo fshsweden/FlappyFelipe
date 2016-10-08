@@ -18,6 +18,7 @@ enum Layer: CGFloat {
 	case Foreground
 	case Player
 	case UI
+	case Flash
 }
 
 struct PhysicsCategory {
@@ -66,7 +67,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 	let bottomObstacleMinFraction: CGFloat = 0.1
 	let bottomObstacleMaxFraction: CGFloat = 0.6
 	
-	let gapMultiplier: CGFloat = 3.5
+	let gapMultiplier: CGFloat = 5.0 // 3.5
 	
 	let firstSpawnDelay: TimeInterval = 1.75
 	let everySpawnDelay: TimeInterval = 1.5
@@ -180,6 +181,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		
 		worldNode.addChild(playerNode)
 		player.movementComponent.playableStart = playableStart // ???
+		
+		player.animationComponent.startWobble()
 	}
 	
 	/*
@@ -457,7 +460,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		gameState.update(deltaTime: deltaTime)
 		
 		//Per-Entity Updates
-		player.update(deltaTime: deltaTime)
+
+		if (player.movementAllowed) {
+			player.update(deltaTime: deltaTime)
+		}
 	}
 	
 	

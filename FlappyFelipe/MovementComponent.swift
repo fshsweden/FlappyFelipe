@@ -12,6 +12,7 @@ import GameplayKit
 class MovementComponent : GKComponent {
 	
 	var spriteComponent: SpriteComponent!
+	var player: Player!
 	
 	var velocity = CGPoint.zero
 	let gravity : CGFloat = -1500
@@ -25,12 +26,14 @@ class MovementComponent : GKComponent {
 	var lastTouchTime: TimeInterval = 0
 	var lastTouchY: CGFloat = 0.0
 	
-	
 	var playableStart: CGFloat = 0
+	
+	let flapAction = SKAction.playSoundFileNamed("flapping.wav", waitForCompletion: false)
 	
 	init(entity: GKEntity) {
 		super.init()
 		self.spriteComponent = entity.component(ofType: SpriteComponent.self)!
+		self.player = entity as? Player
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -41,7 +44,29 @@ class MovementComponent : GKComponent {
 		velocity = CGPoint(x: 0, y: impulse * 2)
 	}
 	
+	func spriteAction(action:SKAction) {
+		spriteComponent.node.run(action)
+	}
+	
+	func sombreroAction(action: SKAction) {
+		player.sombrero.run(action)
+	}
+	
+	func moveSombrero() {
+		if let player = entity as? Player {
+			let moveUp = SKAction.moveBy(x: 0, y: 12, duration: 0.15)
+			moveUp.timingMode = .easeInEaseOut
+			let moveDown = moveUp.reversed()
+			
+			sombreroAction(action: SKAction.sequence([moveUp, moveDown]))
+		}
+	}
+	
 	func applyImpulse(lastUpdateTime: TimeInterval) {
+		
+		spriteAction(action: flapAction)
+		moveSombrero()
+		
 		velocity = CGPoint(x:0, y:impulse)
 		
 		angularVelocity = velocityModifier.degreesToRadians()

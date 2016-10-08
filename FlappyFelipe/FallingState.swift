@@ -22,6 +22,20 @@ class FallingState: GKState {
     
     override func didEnter(from previousState: GKState?) {
 			
+			// Shake Screen!
+			let shake = SKAction.screenShakeWithNode(node: scene.worldNode, amount: CGPoint(x:0,y:7.0), oscillations: 10, duration: 1.0)
+			scene.worldNode.run(shake)
+			
+			// Flash
+			let whiteNode = SKSpriteNode(color: SKColor.white, size: scene.size)
+			whiteNode.position = CGPoint(x: scene.size.width/2, y: scene.size.height/2)
+			whiteNode.zPosition = Layer.Flash.rawValue
+			scene.worldNode.addChild(whiteNode)
+			
+			whiteNode.run(SKAction.removeFromParentAfterDelay(delay: 0.01))
+			
+			
+			
 				// When entering this state, just play funny sound!
         scene.run(SKAction.sequence([whackAction, SKAction.wait(forDuration: 0.1), fallingAction]))
         scene.stopSpawning()
