@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FallyFelipeTV.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>FlappyFelipe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1603268F1DA950090064277E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>16ED99C11DA41ACC00CBD314</key>
 		<dict>
 			<key>primary</key>

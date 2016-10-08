@@ -34,12 +34,13 @@ class GameViewController: UIViewController, GameSceneDelegate {
 					stateClass: MainMenuState.self,
 					delegate: self)
 				
-				skView.showsFPS=true
-				skView.showsNodeCount=true
-				skView.showsPhysics=true
+//				skView.showsFPS=true
+//				skView.showsNodeCount=true
+//				skView.showsPhysics=true
+
 				skView.ignoresSiblingOrder=true
-				
 				scene.scaleMode = .aspectFill
+				
 				skView.presentScene(scene)
 			}
 		}

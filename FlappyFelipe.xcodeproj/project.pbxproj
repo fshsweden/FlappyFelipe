@@ -7,6 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160326931DA950090064277E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160326921DA950090064277E /* AppDelegate.swift */; };
+		160326971DA950090064277E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 160326961DA950090064277E /* Actions.sks */; };
+		160326991DA950090064277E /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160326981DA950090064277E /* Game.xcassets */; };
+		1603269D1DA950090064277E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603269C1DA950090064277E /* GameViewController.swift */; };
+		160326A01DA950090064277E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1603269E1DA950090064277E /* Main.storyboard */; };
+		160326A21DA950090064277E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160326A11DA950090064277E /* Assets.xcassets */; };
+		160326A71DA950580064277E /* PlayingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A561DA6247500C4FC18 /* PlayingState.swift */; };
+		160326A81DA950580064277E /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A581DA6249000C4FC18 /* GameOverState.swift */; };
+		160326A91DA950580064277E /* FallingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A5A1DA6249E00C4FC18 /* FallingState.swift */; };
+		160326AA1DA950580064277E /* MainMenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A5C1DA630A600C4FC18 /* MainMenuState.swift */; };
+		160326AB1DA950580064277E /* TutorialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A5E1DA630B300C4FC18 /* TutorialState.swift */; };
+		160326AC1DA9505C0064277E /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A341DA4DAF400C4FC18 /* PlayerEntity.swift */; };
+		160326AD1DA9505C0064277E /* ObstacleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A531DA548B700C4FC18 /* ObstacleEntity.swift */; };
+		160326AE1DA950650064277E /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A361DA4DB6F00C4FC18 /* SpriteComponent.swift */; };
+		160326AF1DA950650064277E /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A381DA4E5DF00C4FC18 /* MovementComponent.swift */; };
+		160326B01DA950650064277E /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A601DA680C000C4FC18 /* AnimationComponent.swift */; };
+		160326B21DA950650064277E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99C91DA41ACC00CBD314 /* Actions.sks */; };
+		160326B31DA950650064277E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ED99CB1DA41ACC00CBD314 /* GameScene.swift */; };
+		160326B51DA950790064277E /* backgrounds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99E11DA41EA900CBD314 /* backgrounds.atlas */; };
+		160326B61DA950790064277E /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99E21DA41EA900CBD314 /* sprites.atlas */; };
+		160326B71DA950800064277E /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A3B1DA4EC7400C4FC18 /* CGFloat+Extensions.swift */; };
+		160326B81DA950800064277E /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A3C1DA4EC7400C4FC18 /* CGPoint+Extensions.swift */; };
+		160326B91DA950800064277E /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A3D1DA4EC7400C4FC18 /* CGVector+Extensions.swift */; };
+		160326BA1DA950800064277E /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A3E1DA4EC7400C4FC18 /* Int+Extensions.swift */; };
+		160326BB1DA950800064277E /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A3F1DA4EC7400C4FC18 /* SKAction+Extensions.swift */; };
+		160326BC1DA950800064277E /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A401DA4EC7400C4FC18 /* SKAction+SpecialEffects.swift */; };
+		160326BD1DA950800064277E /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A411DA4EC7400C4FC18 /* SKColor+Extensions.swift */; };
+		160326BE1DA950800064277E /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A421DA4EC7400C4FC18 /* SKNode+Extensions.swift */; };
+		160326BF1DA950800064277E /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A431DA4EC7400C4FC18 /* SKTAudio.swift */; };
+		160326C01DA950800064277E /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A441DA4EC7400C4FC18 /* SKTEffects.swift */; };
+		160326C11DA950800064277E /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A451DA4EC7400C4FC18 /* SKTTimingFunctions.swift */; };
+		160326C21DA950800064277E /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A461DA4EC7400C4FC18 /* Vector3.swift */; };
+		160326C31DA950840064277E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99E41DA41EA900CBD314 /* icon.png */; };
+		160326C41DA950840064277E /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99E51DA41EA900CBD314 /* launch.png */; };
+		160326C51DA9508B0064277E /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99F51DA41EA900CBD314 /* coin.wav */; };
+		160326C61DA9508B0064277E /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99F61DA41EA900CBD314 /* ding.wav */; };
+		160326C71DA9508B0064277E /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99F71DA41EA900CBD314 /* falling.wav */; };
+		160326C81DA9508B0064277E /* flapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99F81DA41EA900CBD314 /* flapping.wav */; };
+		160326C91DA9508B0064277E /* hitGround.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99F91DA41EA900CBD314 /* hitGround.wav */; };
+		160326CA1DA9508B0064277E /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99FA1DA41EA900CBD314 /* pop.wav */; };
+		160326CB1DA9508B0064277E /* whack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16ED99FB1DA41EA900CBD314 /* whack.wav */; };
+		160326D01DA98A730064277E /* GameScene+TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160326CC1DA9577D0064277E /* GameScene+TV.swift */; };
 		16298A351DA4DAF400C4FC18 /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A341DA4DAF400C4FC18 /* PlayerEntity.swift */; };
 		16298A371DA4DB6F00C4FC18 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A361DA4DB6F00C4FC18 /* SpriteComponent.swift */; };
 		16298A391DA4E5DF00C4FC18 /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16298A381DA4E5DF00C4FC18 /* MovementComponent.swift */; };
@@ -50,6 +92,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160326901DA950090064277E /* FallyFelipeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallyFelipeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		160326921DA950090064277E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		160326961DA950090064277E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		160326981DA950090064277E /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
+		1603269C1DA950090064277E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1603269F1DA950090064277E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		160326A11DA950090064277E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		160326A31DA950090064277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160326CC1DA9577D0064277E /* GameScene+TV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+TV.swift"; sourceTree = "<group>"; };
 		16298A341DA4DAF400C4FC18 /* PlayerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
 		16298A361DA4DB6F00C4FC18 /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		16298A381DA4E5DF00C4FC18 /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
@@ -95,6 +146,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1603268D1DA950090064277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16ED99BF1DA41ACC00CBD314 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +163,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160326911DA950090064277E /* Flappy Felipe TV */ = {
+			isa = PBXGroup;
+			children = (
+				160326921DA950090064277E /* AppDelegate.swift */,
+				160326961DA950090064277E /* Actions.sks */,
+				160326981DA950090064277E /* Game.xcassets */,
+				1603269C1DA950090064277E /* GameViewController.swift */,
+				1603269E1DA950090064277E /* Main.storyboard */,
+				160326A11DA950090064277E /* Assets.xcassets */,
+				160326A31DA950090064277E /* Info.plist */,
+				160326CC1DA9577D0064277E /* GameScene+TV.swift */,
+			);
+			name = "Flappy Felipe TV";
+			path = FallyFelipeTV;
+			sourceTree = "<group>";
+		};
 		16298A321DA4DAAD00C4FC18 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				16ED99C41DA41ACC00CBD314 /* FlappyFelipe */,
+				160326911DA950090064277E /* Flappy Felipe TV */,
 				16ED99C31DA41ACC00CBD314 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				16ED99C21DA41ACC00CBD314 /* FlappyFelipe.app */,
+				160326901DA950090064277E /* FallyFelipeTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +321,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1603268F1DA950090064277E /* FallyFelipeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160326A61DA950090064277E /* Build configuration list for PBXNativeTarget "FallyFelipeTV" */;
+			buildPhases = (
+				1603268C1DA950090064277E /* Sources */,
+				1603268D1DA950090064277E /* Frameworks */,
+				1603268E1DA950090064277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FallyFelipeTV;
+			productName = FallyFelipeTV;
+			productReference = 160326901DA950090064277E /* FallyFelipeTV.app */;
+			productType = "com.apple.product-type.application";
+		};
 		16ED99C11DA41ACC00CBD314 /* FlappyFelipe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16ED99DA1DA41ACC00CBD314 /* Build configuration list for PBXNativeTarget "FlappyFelipe" */;
@@ -272,6 +365,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Peter Andersson";
 				TargetAttributes = {
+					1603268F1DA950090064277E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9UN5M89MCE;
+						ProvisioningStyle = Automatic;
+					};
 					16ED99C11DA41ACC00CBD314 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9UN5M89MCE;
@@ -293,11 +391,35 @@
 			projectRoot = "";
 			targets = (
 				16ED99C11DA41ACC00CBD314 /* FlappyFelipe */,
+				1603268F1DA950090064277E /* FallyFelipeTV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1603268E1DA950090064277E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160326B61DA950790064277E /* sprites.atlas in Resources */,
+				160326971DA950090064277E /* Actions.sks in Resources */,
+				160326991DA950090064277E /* Game.xcassets in Resources */,
+				160326CB1DA9508B0064277E /* whack.wav in Resources */,
+				160326C61DA9508B0064277E /* ding.wav in Resources */,
+				160326C41DA950840064277E /* launch.png in Resources */,
+				160326A01DA950090064277E /* Main.storyboard in Resources */,
+				160326C51DA9508B0064277E /* coin.wav in Resources */,
+				160326C31DA950840064277E /* icon.png in Resources */,
+				160326C71DA9508B0064277E /* falling.wav in Resources */,
+				160326C81DA9508B0064277E /* flapping.wav in Resources */,
+				160326A21DA950090064277E /* Assets.xcassets in Resources */,
+				160326C91DA9508B0064277E /* hitGround.wav in Resources */,
+				160326CA1DA9508B0064277E /* pop.wav in Resources */,
+				160326B21DA950650064277E /* Actions.sks in Resources */,
+				160326B51DA950790064277E /* backgrounds.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16ED99C01DA41ACC00CBD314 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +445,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1603268C1DA950090064277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1603269D1DA950090064277E /* GameViewController.swift in Sources */,
+				160326BA1DA950800064277E /* Int+Extensions.swift in Sources */,
+				160326BC1DA950800064277E /* SKAction+SpecialEffects.swift in Sources */,
+				160326A81DA950580064277E /* GameOverState.swift in Sources */,
+				160326B91DA950800064277E /* CGVector+Extensions.swift in Sources */,
+				160326A71DA950580064277E /* PlayingState.swift in Sources */,
+				160326BE1DA950800064277E /* SKNode+Extensions.swift in Sources */,
+				160326AB1DA950580064277E /* TutorialState.swift in Sources */,
+				160326AA1DA950580064277E /* MainMenuState.swift in Sources */,
+				160326AD1DA9505C0064277E /* ObstacleEntity.swift in Sources */,
+				160326B01DA950650064277E /* AnimationComponent.swift in Sources */,
+				160326C01DA950800064277E /* SKTEffects.swift in Sources */,
+				160326AE1DA950650064277E /* SpriteComponent.swift in Sources */,
+				160326BD1DA950800064277E /* SKColor+Extensions.swift in Sources */,
+				160326D01DA98A730064277E /* GameScene+TV.swift in Sources */,
+				160326BB1DA950800064277E /* SKAction+Extensions.swift in Sources */,
+				160326C21DA950800064277E /* Vector3.swift in Sources */,
+				160326931DA950090064277E /* AppDelegate.swift in Sources */,
+				160326B81DA950800064277E /* CGPoint+Extensions.swift in Sources */,
+				160326AF1DA950650064277E /* MovementComponent.swift in Sources */,
+				160326A91DA950580064277E /* FallingState.swift in Sources */,
+				160326B31DA950650064277E /* GameScene.swift in Sources */,
+				160326C11DA950800064277E /* SKTTimingFunctions.swift in Sources */,
+				160326BF1DA950800064277E /* SKTAudio.swift in Sources */,
+				160326B71DA950800064277E /* CGFloat+Extensions.swift in Sources */,
+				160326AC1DA9505C0064277E /* PlayerEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16ED99BE1DA41ACC00CBD314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +513,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1603269E1DA950090064277E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1603269F1DA950090064277E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		16ED99CF1DA41ACC00CBD314 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -377,6 +540,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		160326A41DA950090064277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9UN5M89MCE;
+				INFOPLIST_FILE = FallyFelipeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fshsweden.FallyFelipeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		160326A51DA950090064277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9UN5M89MCE;
+				INFOPLIST_FILE = FallyFelipeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fshsweden.FallyFelipeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		16ED99D81DA41ACC00CBD314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,6 +696,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		160326A61DA950090064277E /* Build configuration list for PBXNativeTarget "FallyFelipeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160326A41DA950090064277E /* Debug */,
+				160326A51DA950090064277E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		16ED99BD1DA41ACC00CBD314 /* Build configuration list for PBXProject "FlappyFelipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
